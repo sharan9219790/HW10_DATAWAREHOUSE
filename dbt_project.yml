@@ -1,0 +1,16 @@
+name: 'hw10_wau'
+version: '1.0'
+config-version: 2
+
+profile: 'hw10_wau'   
+
+model-paths: ['models']
+snapshot-paths: ['snapshots']
+
+models:
+  hw10_wau:
+    +materialized: view
+    input:
+      +materialized: view
+    output:
+      +materialized: table
